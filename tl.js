@@ -1,6 +1,8 @@
-let ul = document.querySelector("ul")
+let ol = document.querySelector("ol")
 
-ul.addEventListener("click" , function (dets){
+ol.addEventListener("click" , function (dets){
     dets.target.classList.toggle("lt")
 });
+
+
 
