@@ -34,11 +34,16 @@ let users = [
     pic: "https://i.pinimg.com/736x/22/8b/cf/228bcf5a0800f813cd1744d4ccbf01ea.jpg",
     bio: "aesthetic overload 📸🕊️ | living in lowercase",
   },
+  {
+    name :"haniya amir",
+    pic: "https://tse2.mm.bing.net/th/id/OIP.AKB8jPGm0j1rPju9rdX-nQHaJQ?pid=Api&P=0&h=180",
+    bio: "dreamer with a purpose 🌟 | chasing sunsets",
+  }
 ];
 
 function showUsers(arr) {
   arr.forEach(function (user) {
-    // Create outer card div
+    // Create outer card div for each user
     const card = document.createElement("div");
     card.classList.add("card");
 
