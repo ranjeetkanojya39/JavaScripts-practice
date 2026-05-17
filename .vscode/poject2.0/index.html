@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Note Card Stack</title>
+
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- FORM CONTAINER -->
+    <div class="form-container">
+
+        <h2>New Call</h2>
+
+        <form id="noteForm">
+
+            <!-- Image URL -->
+            <label>Profile Image</label>
+
+            <input 
+                required 
+                type="text" 
+                placeholder="https://example.com/photo.jpg" 
+            />
+
+            <!-- Preview Image -->
+            <img 
+                src="https://pixlr.com/images/generator/simple-generator.webp"
+                alt="profile"
+                class="preview-img"
+                id="previewImg"
+            />
+
+            <!-- Full Name -->
+            <label>Full Name</label>
+
+            <input 
+                required 
+                type="text" 
+                placeholder="Enter full name" 
+            />
+
+            <!-- Home Town -->
+            <label>Home Town</label>
+
+            <input 
+                required 
+                type="text" 
+                placeholder="Enter home town" 
+            />
+
+            <!-- Purpose -->
+            <label>Purpose</label>
+
+            <input 
+                required 
+                type="text" 
+                placeholder="e.g., Quick appointment note" 
+            />
+
+            <!-- Category -->
+            <label>Category</label>
+
+            <label class="tag-checkbox">
+                <input required type="radio" name="category" value="emergency" />
+                <span>Emergency</span>
+            </label>
+
+            <label class="tag-checkbox">
+                <input required type="radio" name="category" value="important" />
+                <span>Important</span>
+            </label>
+
+            <label class="tag-checkbox">
+                <input required type="radio" name="category" value="urgent" />
+                <span>Urgent</span>
+            </label>
+
+            <label class="tag-checkbox">
+                <input required type="radio" name="category" value="no-rush" />
+                <span>No Rush</span>
+            </label>
+
+            <!-- Submit -->
+            <button type="submit" class="submit-btn">
+                Create Note
+            </button>
+
+        </form>
+
+        <!-- Close Button -->
+        <button class="closeForm">Close</button>
+
+    </div>
+
+    <!-- MAIN CONTAINER -->
+    <div class="note-container">
+
+        <!-- LEFT ICONS -->
+        <div class="left-icons">
+
+            <button id="add-note">
+                <i class="ri-add-line"></i>
+            </button>
+
+            <button id="upBtn">
+                <i class="ri-arrow-up-line"></i>
+            </button>
+
+            <button id="downBtn">
+                <i class="ri-arrow-down-line"></i>
+            </button>
+
+        </div>
+
+        <!-- CARD STACK -->
+        <div class="stack"></div>
+
+        <!-- RIGHT COLORS -->
+        <div class="right-colors">
+
+            <span class="dot black"></span>
+            <span class="dot purple"></span>
+            <span class="dot orange"></span>
+            <span class="dot teal"></span>
+
+        </div>
+
+    </div>
+
+    <!-- JS -->
+    <script src="script.js"></script>
+
+</body>
+
+</html>
